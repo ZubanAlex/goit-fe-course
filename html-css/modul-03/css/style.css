@@ -10,30 +10,48 @@
     font-weight: lighter;
     font-style: normal;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: PlayfairDisplay;
+    font-size: 14px;
     width: 901px;
     /* outline: 2px solid red; */
     margin: 0 auto;
     color: #626262;
 }
-main{
-    margin: 0;
-    /* padding-top: 42px; */
-    outline: 2px solid blue;
+header{
+    margin-top: 77px;
+    margin-bottom: 104px;
+}
+
 }
 span{
     display: block;
     font-family: UbuntuLight;
     text-transform: uppercase;
+    margin-top: 31px;
+    font-size: 14px;
 }
-
+h2 {
+    margin-top: 31px;
+    font-size: 30px;
+}
 p{
     height: 60px;
-    
+    margin-top: 41px;
 }
+img{
+    display: block;
+    width: 420px;
+    height: 280px;
+}
+ button{
+     margin: 0 auto;
+ }
 ul.menu{
-    margin:77 0 104 0;
     padding: 0;
     list-style: none;
 
@@ -56,12 +74,16 @@ ul.menu li:first-child{
 a.menu_nav:hover{
     color: #03a9f4;
 }
-article.colum1{
-    width: 421px;
-    /* padding-left: 0; */
-}
-ul.colum1{
+ul.row_1{
+    width: 921px;
     list-style: none;
     padding-left: 0;
-
+}
+ul.row_1 li {
+    display: inline-block;
+    max-width: 421px;
+    padding-bottom: 135px; 
+}
+li.right_li{
+    padding-left: 60px;
 }
