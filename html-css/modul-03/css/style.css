@@ -21,11 +21,13 @@ body{
     /* outline: 2px solid red; */
     margin: 0 auto;
     color: #626262;
+    margin-bottom: 70px;
 }
 header{
     margin-top: 77px;
     margin-bottom: 104px;
 }
+
 
 span{
     display: block;
@@ -47,14 +49,23 @@ img{
     width: 420px;
     height: 280px;
 }
- button{
-     margin: 0 auto;
- }
+button{
+    display: block;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+    margin: auto;
+    margin-top: 57px;
+    font-family: PlayfairDisplay;
+    font-size: 20px;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #626262;    
+}
 ul.menu{
     padding: 0;
     list-style: none;
-
-    
 }
 ul.menu li{
     text-transform: uppercase;
@@ -85,4 +96,7 @@ ul.row_1 li {
 }
 li.right_li{
     padding-left: 60px;
+}
+main ul li.last_row{
+    padding-bottom: 0;
 }
