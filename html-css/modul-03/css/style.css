@@ -27,7 +27,6 @@ header{
     margin-bottom: 104px;
 }
 
-}
 span{
     display: block;
     font-family: UbuntuLight;
@@ -69,7 +68,7 @@ ul.menu li a{
     padding-right: 100px;
 }
 ul.menu li:first-child{
-    padding-left: 165px;
+    padding-left: 180px;
 }
 a.menu_nav:hover{
     color: #03a9f4;
