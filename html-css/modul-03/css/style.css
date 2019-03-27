@@ -1,0 +1,67 @@
+@font-face{
+    font-family: PlayfairDisplay;
+    src: url(../font/playfair-display_[allfont.ru].ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: UbuntuLight;
+    src: url(../font/Ubuntu-L.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+body{
+    font-family: PlayfairDisplay;
+    width: 901px;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    color: #626262;
+}
+main{
+    margin: 0;
+    /* padding-top: 42px; */
+    outline: 2px solid blue;
+}
+span{
+    display: block;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+}
+
+p{
+    height: 60px;
+    
+}
+ul.menu{
+    margin:77 0 104 0;
+    padding: 0;
+    list-style: none;
+
+    
+}
+ul.menu li{
+    text-transform: uppercase;
+    display: inline-block;
+        
+}
+ul.menu li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #626262;
+    padding-right: 100px;
+}
+ul.menu li:first-child{
+    padding-left: 165px;
+}
+a.menu_nav:hover{
+    color: #03a9f4;
+}
+article.colum1{
+    width: 421px;
+    /* padding-left: 0; */
+}
+ul.colum1{
+    list-style: none;
+    padding-left: 0;
+
+}
