@@ -14,6 +14,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    margin-left: 10px;
+}
 body{
     font-family: PlayfairDisplay;
     font-size: 14px;
