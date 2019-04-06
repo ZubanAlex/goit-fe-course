@@ -47,19 +47,12 @@ p {
     margin-bottom: 0px;
     line-height: 24px;
 }
-<<<<<<< HEAD
-img{
-    /* display: block; */
-    width: 420px;
-    /* height: 280px; */
-=======
 
 section {
     max-width: 420px;
     display: block;
     float: left;
     margin-top: 134px;
->>>>>>> a043e3ddb9f803c49fc5db3e919cf4480adfa208
 }
 
 button {
@@ -100,7 +93,6 @@ header nav ul li:nth-child(2) {
 header nav ul li:nth-child(3) {
     padding-left: 102px;
 }
-<<<<<<< HEAD
 button:hover{
     background-color: #27b1db;
 }
@@ -108,11 +100,6 @@ ul.row_1{
     width: 921px;
     list-style: none;
     padding-left: 0;
-=======
-
-header nav ul li:nth-child(4) {
-    padding-left: 92px;
->>>>>>> a043e3ddb9f803c49fc5db3e919cf4480adfa208
 }
 
 header nav ul li a {
