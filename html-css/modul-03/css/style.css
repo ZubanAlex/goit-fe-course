@@ -48,9 +48,9 @@ p{
     margin-top: 41px;
 }
 img{
-    display: block;
+    /* display: block; */
     width: 420px;
-    height: 280px;
+    /* height: 280px; */
 }
 button{
     display: block;
@@ -86,6 +86,9 @@ ul.menu li:first-child{
 }
 a.menu_nav:hover{
     color: #03a9f4;
+}
+button:hover{
+    background-color: #27b1db;
 }
 ul.row_1{
     width: 921px;
