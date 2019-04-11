@@ -18,6 +18,8 @@ header{
 }
 
 .logo {
+    display: block;
+    text-decoration: none;
     font-size: 30px;    
     line-height: 32px;
     font-family: "Roboto";
@@ -37,7 +39,7 @@ header{
 ul.menu {
     list-style: none;
     float: right; 
-    margin-top: 5px;       
+    margin-top: 10px;       
 }
 
 li.menu-item {    
@@ -50,6 +52,7 @@ li.menu-item:not(:last-child) {
 }
 
 .menu-link {
+    display: block;
     text-decoration: none;
     font-family: "Open Sans";
     font-weight: 700;
@@ -67,11 +70,15 @@ li.menu-item:not(:last-child) {
 
 /* HEADER END */
 
+main {
+    width: 1110px;
+    margin: 0 auto;
+}
+
 /* FEATURE START */
 
-.feature-product {
-    width: 1110px;
-    margin: 0 auto 105px;
+.feature-product {    
+    margin-bottom: 105px;
 }
 
 .feature-title, .latest-title {
@@ -83,12 +90,17 @@ li.menu-item:not(:last-child) {
     line-height: 35px;
 }
 
+.feature-title {
+    margin-bottom: 90px;
+
+}
+
 .feature-title::after {
     content: '';
     display: block;
     width: 164px;
     height: 7px;
-    margin: 32px auto 90px;
+    margin: 32px auto 0;
     background-color: #1abc9c;
 }
 
@@ -161,8 +173,11 @@ li.menu-item:not(:last-child) {
 
 /* LEATEST START */
 .latest-news {
-    width: 1110px;
-    margin: 0 auto 82px;
+    padding-bottom: 82px;
+}
+
+.latest-title {
+    margin-bottom: 80px;
 }
 
 .latest-title::after {
@@ -170,7 +185,7 @@ li.menu-item:not(:last-child) {
     display: block;
     width: 164px;
     height: 7px;
-    margin: 32px auto 80px;
+    margin: 32px auto 0;
     background-color: #1abc9c;
 }
 
@@ -223,16 +238,20 @@ li.menu-item:not(:last-child) {
 }
 
 .latest-button {
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 16.5px;
     float: left;
     width: 160px;
     height: 51px;
     font-family: "Open Sans";
     font-weight: 300;
     font-size: 16px;
-    text-align: center;    
+    line-height: 16px;
+    text-align: center;
     color: #ffffff;
     background-color: #4ec6ab;
-    border: none;
     border-radius: 3px;       
 }
 
