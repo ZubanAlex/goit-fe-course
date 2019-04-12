@@ -69,9 +69,63 @@ header {
 
 /* SLIDER */
 
-.slider-body {
-    height: 600px;
+.slider-body {    
     background-image: url(../img/SliderBG.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.slider {
+    position: relative;
+    height: 600px;
+}
+
+.slider-ctrl {    
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    border: none;
+    background-color: #1abc9c77;    
+    background-repeat: no-repeat;
+    background-position: center;    
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.slider-ctrl:hover {
+    background-color: #1abc9c;
+    transition: 0.2s;
+}
+.prew {
+    left: 0;
+    background-image: url(../img/icon/icon-prew.png);          
+}
+
+.next {
+    right: 0;
+    background-image: url(../img/icon/icon-next.png);     
+}
+
+.slider-text {
+    position: absolute;
+    left: 185px;
+    top: 219px;
+    
+}
+
+.slider-text-up {
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 36px;
+    letter-spacing: -0.2px;
+}
+
+.slider-text-down {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: -0.2px;
 }
