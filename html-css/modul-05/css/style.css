@@ -15,14 +15,15 @@
 }
 
 body {
-    width: 100vw;
+    min-width: 1600px;
 }
+
 
 /* HEADER START */
 
 header {
     padding-top: 36px;
-    padding-bottom: 32px;
+    padding-bottom: 32px;    
 }
 
 .logo {
