@@ -290,6 +290,8 @@ header {
 }
 
 .icon {
+    background-color: #55525200;
+    border: none;
     display: block;    
     width: 48px;
     height: 48px;
