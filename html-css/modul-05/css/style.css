@@ -21,8 +21,8 @@ body {
 /* HEADER START */
 
 header {
-    padding-top: 36px;
-    padding-bottom: 32px;    
+    padding-top: 32px;
+    padding-bottom: 29px;    
 }
 
 .logo {
@@ -149,6 +149,7 @@ header {
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 48px;
+    line-height: 38px;
     text-align: center;
     color: #515151;
     margin-bottom: 80px; 
