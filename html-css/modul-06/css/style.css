@@ -5,8 +5,7 @@
 @font-face {
     font-family: 'KaushanScript';
     src: url(../font/KaushanScript-Regular.otf);
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;    
 }
 
 * {
@@ -30,6 +29,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     height: 50px;
+    margin-bottom: 128px;
 }
 
 .menu-list {
@@ -45,7 +45,8 @@ header {
     text-decoration: none;
     color: #95e1d3;
     text-transform: uppercase;
-    padding: 10px 10px 0 10px;    
+    padding: 10px 10px 0 10px; 
+    transition: color 200ms linear;   
 }
 
 .menu-items-link::after {
@@ -62,10 +63,195 @@ header {
 
 .menu-items-link:hover {
     color: #f38181;
-    transition: 200ms linear;
+    transition: color 200ms linear;
 }
 
 .menu-items-link:hover::after {    
     transform: scaleX(1);    
     transition: 200ms linear; 
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+/* TITLE START */
+
+.up-title {
+    font-family: 'KaushanScript';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.down-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.down-title::after {
+    content:'';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;    
+}
+
+/* TITLE END */
+
+/* SERVICE STAR */
+
+.service {
+    margin-bottom: 90px;
+}
+
+.title-service {
+    text-align: center;
+}
+
+.title-service.down-title {
+    margin-bottom: 110px;
+}
+
+/* SERVICE-LIST START */
+
+.service-list {
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.service-list-items {
+    width: 350px;        
+    padding-left: 60px;
+    list-style: none;
+    position: relative;    
+}
+
+.service-list-items-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-list-items-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: #999;
+    line-height: 24px;
+}
+
+.service-list-items.photography {
+    background: url(../img/icon_article/ALARM.png) no-repeat;
+}
+
+.service-list-items.design {
+    background: url(../img/icon_article/LINE\ GRAPH.png) no-repeat;
+}
+
+.service-list-items.creativity {
+    background: url(../img/icon_article/COMPUTER.png) no-repeat;
+}
+
+.service-list-items.seo {
+    background: url(../img/icon_article/BOOK\ 2.png) no-repeat;
+}
+
+.service-list-items.html {
+    background: url(../img/icon_article/HOME.png) no-repeat;
+}
+
+.service-list-items.digital {
+    background: url(../img/icon_article/IMAGE.png) no-repeat;
+}
+
+/* SERVICE END */
+
+/* TEAM START */
+
+.title-team {
+    text-align: center;
+}
+
+.title-team.down-title {
+    margin-bottom: 90px;
+}
+
+.team-text {
+    width: 950px;
+    text-align: center;
+    margin: 0 auto 90px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: #999;
+    line-height: 24px;
+}
+
+.team-member-list-items {
+    list-style: none;
+    width: 380px;
+    position: relative;
+}
+
+.team-member-img {
+    display: block;
+    margin-bottom: 27px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 200ms linear        
+}
+
+.team-member-img:hover {
+    box-shadow: 10px 10px #95e1d3;
+    top: -10px;
+    left: -10px;
+    transition: 200ms linear;
+}
+
+.team-member-name {
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.team-member-post {
+    color: #999;    
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    
+}
+
+/* OVERLAY IMG START */
+
+.overlay-member-img {
+    position: absolute;
+    z-index: 1;
+    width: 380px;
+    height: 470px;
+    background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%);
+    opacity: 0;
+    display: none;
+}
+
+.team-member-list-items:hover .overlay-member-img {
+    opacity: 1;
+    display: block;
+    top: -10px;
+    left: -10px;
+    transition: 200ms linear;
 }
