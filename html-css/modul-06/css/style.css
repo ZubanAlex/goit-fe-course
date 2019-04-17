@@ -196,6 +196,11 @@ header {
     line-height: 24px;
 }
 
+.team-member-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .team-member-list-items {
     list-style: none;
     width: 380px;
@@ -209,13 +214,6 @@ header {
     top: 0;
     left: 0;
     transition: 200ms linear        
-}
-
-.team-member-img:hover {
-    box-shadow: 10px 10px #95e1d3;
-    top: -10px;
-    left: -10px;
-    transition: 200ms linear;
 }
 
 .team-member-name {
@@ -240,18 +238,150 @@ header {
 
 .overlay-member-img {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 380px;
     height: 470px;
     background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%);
     opacity: 0;
-    display: none;
+    transition: 200ms linear;    
 }
 
-.team-member-list-items:hover .overlay-member-img {
-    opacity: 1;
-    display: block;
+.overlay-member-img-button {
+    width: 224px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.button-body {    
+    width: 55px;
+    height: 56px;
+    border: none;
+    transition: 200ms linear;    
+}
+
+.facebook {
+    background: url(../img/icon_network/facebook.png) center no-repeat #fce38a;
+}
+
+.twitter {
+    background: url(../img/icon_network/twitter.png) center no-repeat #fce38a;
+}
+
+.pinterest {
+    background: url(../img/icon_network/pinterest.png) center no-repeat #fce38a;
+}
+
+.instagram {
+    background: url(../img/icon_network/instagram.png) center no-repeat #fce38a;
+}
+
+
+/*OVERLAY HOVER START*/
+
+.overlay-control:hover .overlay-member-img  {
+    opacity: 1;    
     top: -10px;
     left: -10px;
     transition: 200ms linear;
 }
+
+.overlay-control:hover .team-member-img {
+    box-shadow: 10px 10px #95e1d3;
+    top: -10px;
+    left: -10px;
+    transition: 200ms linear;
+}
+
+.button-body:hover {
+    background-color: #95e1d3;
+    transition: 200ms linear;
+}
+
+/*OVERLAY HOVER END*/
+
+/* OVERLAY IMG END */
+
+/* TEAM END */
+
+main {
+    margin-bottom: 82px;
+}
+
+/* FOOTER START */
+
+footer {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+
+footer::before {
+    content: '';    
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.copyright {
+    align-self: center;
+    color: #333;
+}
+
+.copyright-link {
+    text-decoration: none;
+    color: #f38181;
+}
+
+/* SUBSCRUBE FORM START */
+
+.subscribe {
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;    
+    height: 40px;
+}
+
+.subscribe-form {
+    width: 230px;
+    border: 1px solid #ccc;    
+    border-right-width: 0;
+    outline:none;
+    padding: 14px 12px 13px 12px;    
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;    
+    color: #ccc;  
+}
+
+.subscribe-form::placeholder {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;    
+    color: #ccc;
+}
+
+.subscribe-submit {
+    width: 150px;
+    background-color: #95e1d3;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;     
+}
+
+/* SUBSCRUBE FORM END */
+
+/* FOOTER END */
