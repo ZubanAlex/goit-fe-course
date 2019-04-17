@@ -262,7 +262,8 @@ header {
     width: 55px;
     height: 56px;
     border: none;
-    transition: 200ms linear;    
+    transition: 200ms linear;
+    outline: none;    
 }
 
 .facebook {
@@ -354,7 +355,7 @@ footer::before {
     width: 230px;
     border: 1px solid #ccc;    
     border-right-width: 0;
-    outline:none;
+    outline: none;
     padding: 14px 12px 13px 12px;    
     font-family: 'Roboto';
     font-weight: 300;
@@ -375,6 +376,7 @@ footer::before {
     width: 150px;
     background-color: #95e1d3;
     border: none;
+    outline: none;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 14px;
