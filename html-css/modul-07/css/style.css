@@ -52,20 +52,20 @@ ul {
 }
 
 .conteiner {
-    width: 94em;
+    width: 940px;
     margin: 0 auto;
 }
 
 /* HEADER START */
 
 header {
-    min-width: 140em;
+    min-width: 1400px;
 }
 header .conteiner {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 7.4em;
+    height: 74px;
 }
 
 .logo {      
@@ -103,13 +103,13 @@ header .conteiner {
 /* HEADER END */
 
 main {
-    min-width: 140em;
+    min-width: 1400px;
 }
 
 /* SERVICE START */
 
 .service .conteiner {
-    padding: 12em 0 12em;
+    padding: 120px 0 120px;
 }
 
 .sevice-title, .contact-title {
@@ -142,7 +142,7 @@ main {
 
 .service-article-list-items {
     text-align: center;
-    width: 29em;
+    width: 290px;
 }
 
 .service-article-title {
@@ -194,7 +194,8 @@ main {
 }
 
 .contact .conteiner {
-    padding-top: 11em;
+    padding-top: 110px;
+    padding-bottom: 116px;
 }
 
 .contact-title {
@@ -204,3 +205,81 @@ main {
 .contact-title-text {
     margin-bottom: 80px;
 }
+form {
+    height: 306px;
+    position: relative;
+    
+}
+input {
+    display: block;
+    width: 456px;
+    height: 52px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 28px;         
+}
+
+textarea {
+    width: 456px;
+    height: 212px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 14px;
+    resize: none;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-items {
+    padding-left: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;  
+}
+
+.form-items::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #bbb;
+    text-transform: uppercase;    
+}
+
+.form-button {
+    width: 240px;
+    height: 65px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fed136;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;    
+    text-transform: uppercase;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type='email']:valid, input[name='user_name']:valid, textarea:valid {
+    border: 2px solid #00ff00;
+}
+
+input[type='email']:invalid, input[name='user_name']:invalid, textarea:invalid {
+    border: 2px solid #ff0000;    
+}
+
+/* CONTACT END */
