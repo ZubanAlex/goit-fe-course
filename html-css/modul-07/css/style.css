@@ -267,6 +267,7 @@ button {
     font-weight: 700;
     font-size: 1.8rem;    
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 input:focus {
