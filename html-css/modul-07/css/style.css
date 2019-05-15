@@ -204,37 +204,34 @@ main {
 .contact-title-text {
     margin-bottom: 80px;
 }
-form {
-    height: 306px;
-    position: relative;
-    
+form {   
+    display: flex;
+    flex-wrap: wrap;    
 }
+
 input {
     display: block;
     width: 456px;
     height: 52px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    margin-bottom: 28px;         
+            
 }
 
+input:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.input-wrapper {
+    margin: 0 28px 28px 0;
+}
 textarea {
     width: 456px;
     height: 212px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    border-radius: 3px;    
     padding-top: 14px;
     resize: none;
-}
-
-button {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .form-items {
@@ -268,6 +265,7 @@ button {
     font-size: 1.8rem;    
     text-transform: uppercase;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 input:focus {
