@@ -39,10 +39,17 @@ html {
 body {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;    
+    font-weight: 700;      
 }
 
-header {
+/* HEADER START */
+
+.conteiner {
+    width: 294px;
+    margin: 0 auto;
+}
+
+.dreams {
     width: 320px;
     background: url(../img/Screen_1_BG.png) no-repeat;
     background-size: cover;
@@ -50,6 +57,7 @@ header {
     color: #fff;
     padding: 20px 0 138px 0;
     text-align: center;
+    margin: 0 auto;
 }
 
 .menu {
@@ -82,7 +90,7 @@ header {
 
 .log-in {
     border: none;
-    margin-right: 19px;
+    margin-right: 20px;
 }
 
 .logo {
@@ -92,8 +100,7 @@ header {
     font-size: 2rem;
     text-transform: uppercase;
     line-height: 0.8em;
-    text-align: center;
-    padding: 0 68px; 
+    letter-spacing: 0.5px;     
 }
 
 .main-title {
@@ -106,9 +113,9 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.8rem;
-    padding: 0 50px;    
+    font-size: 1.8rem;       
     margin-bottom: 20px;
+    padding: 0 34px;
 }
 
 .find-partner {
@@ -129,9 +136,13 @@ header {
 
 
 @media (min-width: 768px) {
-    header {
+    .dreams {
         width: 768px;
-        padding: 50px 50px 234px 46px;
+        padding: 50px 0 234px;
+    }
+
+    .conteiner {
+        width: 672px;
     }
 
     .menu {
@@ -150,4 +161,87 @@ header {
     .logo {
         padding: 0;
     }
+
+    .main-title {
+        margin-bottom: 40px;
+        font-size: 5.2rem;
+    }
+
+    .main-title-text {
+        margin-bottom: 34px;
+        padding: 0;
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .dreams {
+        width: 1440px;
+        padding-top: 38px;
+    }
+    .conteiner {
+        width: 940px;
+    }
+    
+}
+
+/* HEADER END */
+
+.partner {
+    width: 320px;
+    margin: 0 auto;
+    padding: 68px 0 0 0;
+}
+
+.partner-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partner-list {
+    list-style: none;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.partner-list-item {
+    list-style: none;    
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-foto-wrapper {
+    width: 122px;
+    height: 122px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.partner1-foto-link {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff4e50;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.partner-name {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.partner-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
 }
