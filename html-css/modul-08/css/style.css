@@ -47,17 +47,18 @@ body {
 .conteiner {
     width: 294px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: center;
 }
 
 .dreams {
-    width: 320px;
-    background: url(../img/Screen_1_BG.png) no-repeat;
-    background-size: cover;
-    background-position: center;   
+    max-width: 1440px;
+    background: url(../img/Screen_1_BG.png) center/cover no-repeat scroll;
     color: #fff;
     padding: 20px 0 138px 0;
-    text-align: center;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .menu {
@@ -133,11 +134,110 @@ body {
     margin: 0 auto;
 }
 
+/* HEADER END */
+
+.partner {
+    max-width: 1440px;    
+    padding: 68px 0 58px 0;
+    color: #333333;
+    margin: 0 auto;
+}
+
+.partner-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partner-list {
+    list-style: none;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.partner-list-item {
+    list-style: none;    
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.partner-list-item:last-child{
+    margin-bottom: 0;
+}
+
+.partner-foto-wrapper {
+    width: 122px;
+    height: 122px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.partner-foto-link {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;          
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.partner1 {
+    background: url(../img/Icon/icon_parter_1.png) center center/auto no-repeat #ff4e50;
+}
+
+.partner2 {
+    background: url(../img/Icon/icon_parter_2.png) center center/auto no-repeat #ffa507;
+}
+
+.partner3 {
+    background: url(../img/Icon/icon_parter_3.png) center center/auto no-repeat #1cd7ad;
+}
+
+.partner4 {
+    background: url(../img/Icon/icon_parter_4.png) 40% 50%/auto no-repeat #4e73db;
+}
+
+.partner-name {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.partner-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #c1c1c1;
+    text-align: center;
+}
+
+.other-partner {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 0.8em;
+    color: #ff4e50;    
+    background-color: transparent;
+    padding: 12px 70px 10px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    margin: 0 auto;
+}
 
 
 @media (min-width: 768px) {
-    .dreams {
-        width: 768px;
+    
+    .dreams {       
         padding: 50px 0 234px;
     }
 
@@ -172,76 +272,46 @@ body {
         padding: 0;
         font-size: 2.4rem;
     }
+
+    .partner {
+        padding: 72px 0 40px; 
+    }
+
+    .partner-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;        
+        width: 494px;
+        margin: 0 auto 40px;
+    }
+
+    .partner-list-item {
+        margin-bottom: 56px;
+    }
+
+    .partner-list-item:nth-child(n-2){
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 1440px) {
-    .dreams {
-        width: 1440px;
+    .dreams {        
         padding-top: 38px;
     }
     .conteiner {
         width: 940px;
+    }
+
+    .partner {
+        padding: 70px 0 74px; 
+    }
+
+    .partner-list {              
+        width: 100%;
+        align-items: flex-start;       
     }
     
 }
 
 /* HEADER END */
 
-.partner {
-    width: 320px;
-    margin: 0 auto;
-    padding: 68px 0 0 0;
-}
-
-.partner-title {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.partner-list {
-    list-style: none;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.partner-list-item {
-    list-style: none;    
-    width: 198px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.partner-foto-wrapper {
-    width: 122px;
-    height: 122px;
-    margin-bottom: 20px;
-    position: relative;
-
-}
-
-.partner1-foto-link {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: #ff4e50;
-    border: 4px solid #fff;
-    border-radius: 50%;
-}
-
-.partner-name {
-    font-size: 1.4rem;
-    margin-bottom: 14px;
-}
-
-.partner-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.4rem;
-    text-align: center;
-}
