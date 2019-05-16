@@ -37,12 +37,10 @@ html {
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;      
 }
-
-/* HEADER START */
 
 .conteiner {
     width: 294px;
@@ -53,9 +51,11 @@ body {
     text-align: center;
 }
 
+/* HEADER START */
+
 .dreams {
     max-width: 1440px;
-    background: url(../img/Screen_1_BG.png) center/cover no-repeat scroll;
+    background: url(../img/Screen_1_BG.png) center/cover no-repeat;
     color: #fff;
     padding: 20px 0 138px 0;
     margin: 0 auto;    
@@ -74,13 +74,14 @@ body {
 
 .nav-button-wrapper button {
     display: block;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 0.8em;
     color: #fff;    
-    background: none;        
+    background: none;
+    cursor: pointer;        
 }
 
 .sign-up {
@@ -111,7 +112,7 @@ body {
 }
 
 .main-title-text {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.8rem;       
@@ -121,7 +122,7 @@ body {
 
 .find-partner {
     display: block;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
@@ -132,9 +133,12 @@ body {
     border: none;
     border-radius: 20px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 /* HEADER END */
+
+/* SECTION PARTNER START */
 
 .partner {
     max-width: 1440px;    
@@ -181,8 +185,8 @@ body {
 .partner-foto-link {
     display: block;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -4px;
+    right: -4px;
     width: 40px;
     height: 40px;          
     border: 4px solid #fff;
@@ -190,15 +194,15 @@ body {
 }
 
 .partner1 {
-    background: url(../img/Icon/icon_parter_1.png) center center/auto no-repeat #ff4e50;
+    background: url(../img/Icon/icon_parter_1.png) center /auto no-repeat #ff4e50;
 }
 
 .partner2 {
-    background: url(../img/Icon/icon_parter_2.png) center center/auto no-repeat #ffa507;
+    background: url(../img/Icon/icon_parter_2.png) center /auto no-repeat #ffa507;
 }
 
 .partner3 {
-    background: url(../img/Icon/icon_parter_3.png) center center/auto no-repeat #1cd7ad;
+    background: url(../img/Icon/icon_parter_3.png) center /auto no-repeat #1cd7ad;
 }
 
 .partner4 {
@@ -211,7 +215,7 @@ body {
 }
 
 .partner-text {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.4rem;
@@ -221,7 +225,7 @@ body {
 
 .other-partner {
     display: block;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
@@ -232,10 +236,13 @@ body {
     border: 2px solid #ff4e50;
     border-radius: 20px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
+/* SECTION PARTNER END */
 
-@media (min-width: 768px) {
+
+@media (min-width: 686px) {
     
     .dreams {       
         padding: 50px 0 234px;
@@ -277,10 +284,15 @@ body {
         padding: 72px 0 40px; 
     }
 
+    .partner-title {
+        margin-bottom: 36px;;
+    }
+
     .partner-list {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;        
+        justify-content: space-between;
+        align-items: self-start;        
         width: 494px;
         margin: 0 auto 40px;
     }
@@ -289,15 +301,28 @@ body {
         margin-bottom: 56px;
     }
 
-    .partner-list-item:nth-child(n-2){
+    .partner-list-item:nth-child(even){
         margin-bottom: 0;
+    }
+
+    .partner-list-item:nth-child(2) {
+        order: 2;
+    }
+
+    .partner-list-item:nth-child(3) {
+        order: 1;
+    }
+
+    .partner-list-item:nth-child(4) {
+        order: 3;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 968px) {
     .dreams {        
         padding-top: 38px;
     }
+
     .conteiner {
         width: 940px;
     }
@@ -306,12 +331,16 @@ body {
         padding: 70px 0 74px; 
     }
 
+    .partner-list-item {
+        margin-bottom: 0;
+    }
+
     .partner-list {              
         width: 100%;
-        align-items: flex-start;       
+        align-items: flex-start;
+        margin-bottom: 38px;       
     }
     
 }
 
-/* HEADER END */
 
