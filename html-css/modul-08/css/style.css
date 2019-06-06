@@ -328,7 +328,8 @@ body {
     }
 
     .partner {
-        padding: 70px 0 74px; 
+        padding: 70px 0 74px;
+        background-color: #1cd7ad; 
     }
 
     .partner-list-item {
