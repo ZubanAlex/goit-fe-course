@@ -2,158 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homework-10</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Homework-10</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container">
-            <nav class="menu">
-                <a href="#" class="logo">
-                    <img 
-                        srcset="./img/MoGo@1x.png 86w, ./img/MoGo@2x.png 172w"
-                        sizes="86px"
-                        src="./img/MoGo@1x.png" 
-                        alt="Mogo_Logo" 
-                        class="logo-img"
-                        height="23">
-                </a>
-                <ul class="list menu__list">
-                    <li class="menu__items"><a href="#" class="link menu__link">About</a></li>
-                    <li class="menu__items"><a href="#" class="link menu__link">service</a></li>
-                    <li class="menu__items"><a href="#" class="link menu__link">work</a></li>
-                    <li class="menu__items"><a href="#" class="link menu__link">blog</a></li>
-                    <li class="menu__items"><a href="#" class="link menu__link">contact</a></li>
-                    <li class="menu__items"><a href="#" class="link menu__link"><img src="./img/icon_menu/SHOPPING_CART.svg" alt="SHOPPING CART"></a></li> 
-                    <li class="menu__items"><a href="#" class="link menu__link"><img src="./img/icon_menu/MAGNIFYING_GLASS.svg" alt="MAGNIFYING GLASS"></a></li>               
-                </ul>
-            </nav>
-            <h2 class="subtitle page-header__subtitle">Creative Template</h2>
-            <h1 class=" title page-header__title">Welcome <br> to MoGo</h1>
-            <button class="header-btn">Learn more</button>
-        </div>
-    </header>
-    <main>
-        <section class="service">
-            <div class="container ">
-                <h3 class="title-service up-title">We work with</h3>
-                <h2 class="title-service down-title">Amazing Services</h2>
-                <ul class="service-list">
-                    <li class="service-list-items photography">
-                        <h4 class="service-list-items-title">Photography</h4>
-                        <p class="service-list-items-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do
-                            eiusmod tempor.</p>
-                    </li>
-                    <li class="service-list-items design">
-                        <h4 class="service-list-items-title">Web Design</h4>
-                        <p class="service-list-items-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor.</p>
-                    </li>
-                    <li class="service-list-items creativity">
-                        <h4 class="service-list-items-title">Creativity</h4>
-                        <p class="service-list-items-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor.</p>
-                    </li>
-                    <li class="service-list-items seo">
-                        <h4 class="service-list-items-title">seo</h4>
-                        <p class="service-list-items-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod.</p>
-                    </li>
-                    <li class="service-list-items html">
-                        <h4 class="service-list-items-title">Css/Html</h4>
-                        <p class="service-list-items-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do
-                            tempor.
-                        </p>
-                    </li>
-                    <li class="service-list-items digital">
-                        <h4 class="service-list-items-title">digital</h4>
-                        <p class="service-list-items-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </li>
-                </ul>
+  <header class="page-header">
+    <div class="container">
+      <nav class="menu">
+        <a href="#" class="logo">
+          <img srcset="./img/MoGo@1x.png 86w, ./img/MoGo@2x.png 172w" sizes="86px" src="./img/MoGo@1x.png"
+            alt="Mogo_Logo" class="logo-img" height="23" />
+        </a>
+        <ul class="list menu__list">
+          <li class="menu__items">
+            <a href="#" class="link menu__link">About</a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">service</a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">work</a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">blog</a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">contact</a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">
+              <svg class="menu__icon menu__icon--cart">
+                <use href="./img/icon_menu/icon_menu.svg#cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu__items">
+            <a href="#" class="link menu__link">
+              <svg class="menu__icon menu__icon--glass">
+                <use href="./img/icon_menu/icon_menu.svg#glass"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="subtitle page-header__subtitle">Creative Template</h2>
+      <h1 class=" title page-header__title">
+        Welcome <br />
+        to MoGo
+      </h1>
+      <button class="header-btn">Learn more</button>
+    </div>
+  </header>
+  <main>
+    <section class="service">
+      <div class="container">
+        <h3 class="subtitle subtitle--section service__subtitle">We work with</h3>
+        <h2 class="title title--section service__title">Amazing Services</h2>
+        <ul class="list service-list">
+          <li class="service-list__items service-list__items--photography">
+            <h4 class="service-list__title">Photography</h4>
+            <p class="service-list__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="service-list__items service-list__items--design">
+            <h4 class="service-list__title">Web Design</h4>
+            <p class="service-list__text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+          </li>
+          <li class="service-list__items service-list__items--creativity">
+            <h4 class="service-list__title">Creativity</h4>
+            <p class="service-list__text">
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </li>
+          <li class="service-list__items service-list__items--seo">
+            <h4 class="service-list__title">seo</h4>
+            <p class="service-list__text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+          </li>
+          <li class="service-list__items service-list__items--html">
+            <h4 class="service-list__title">Css/Html</h4>
+            <p class="service-list__text">
+              Lorem dolor sit amet, consectetur adipiscing elit, sed do
+              tempor.
+            </p>
+          </li>
+          <li class="service-list__items service-list__items--digital">
+            <h4 class="service-list__title">digital</h4>
+            <p class="service-list__text">
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <h3 class="subtitle subtitle--section team__subtitle">Who we are</h3>
+        <h2 class="title title--section team__title">Meet our team</h2>
+        <p class="team-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <ul class="team-member-list">
+          <li class="team-member-list-items">
+            <div class="overlay-control">
+              <div class="overlay-member-img">
+                <div class="overlay-member-img-link">
+                  <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
+                  <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" class="link-body pinterest"></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="link-body instagram"></a>
+                </div>
+              </div>
+              <img srcset="./img/Member_1.png 380w, ./img/Member_1@2x.png 760w" sizes="380px" src="./img/Member_1.png"
+                alt="Matthew Dix" class="team-member-img" height="470" />
             </div>
-        </section>
-        <section class="team">
-            <div class="container">
-                <h3 class="title-team up-title">Who we are</h3>
-                <h2 class="title-team down-title">Meet our team</h2>
-                <p class="team-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <ul class="team-member-list">
-                    <li class="team-member-list-items">
-                        <div class="overlay-control">
-                            <div class="overlay-member-img">
-                                <div class="overlay-member-img-link">
-                                    <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
-                                    <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
-                                    <a href="https://www.pinterest.com/" target="_blank"
-                                        class="link-body pinterest"></a>
-                                    <a href="https://www.instagram.com/" target="_blank"
-                                        class="link-body instagram"></a>
-                                </div>
-                            </div>
-                            <img src="./img/Member_1.png" alt="Matthew Dix" class="team-member-img" width="380"
-                                height="470">
-                        </div>
-                        <p class="team-member-name">Matthew Dix</p>
-                        <p class="team-member-post">Graphic Design</p>
-                    </li>
-                    <li class="team-member-list-items">
-                        <div class="overlay-control">
-                            <div class="overlay-member-img">
-                                <div class="overlay-member-img-link">
-                                    <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
-                                    <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
-                                    <a href="https://www.pinterest.com/" target="_blank"
-                                        class="link-body pinterest"></a>
-                                    <a href="https://www.instagram.com/" target="_blank"
-                                        class="link-body instagram"></a>
-                                </div>
-                            </div>
-                            <img src="./img/Member_2.png" alt="Christopher Campbell" class="team-member-img" width="380"
-                                height="470">
-                        </div>
-                        <p class="team-member-name">Christopher Campbell</p>
-                        <p class="team-member-post">Branding/UX design</p>
-                    </li>
-                    <li class="team-member-list-items">
-                        <div class="overlay-control">
-                            <div class="overlay-member-img">
-                                <div class="overlay-member-img-link">
-                                    <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
-                                    <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
-                                    <a href="https://www.pinterest.com/" target="_blank"
-                                        class="link-body pinterest"></a>
-                                    <a href="https://www.instagram.com/" target="_blank"
-                                        class="link-body instagram"></a>
-                                </div>
-                            </div>
-                            <img src="./img/Member_3.png" alt="Michael Fertig" class="team-member-img" width="380"
-                                height="470">
-                        </div>
-                        <p class="team-member-name">Michael Fertig</p>
-                        <p class="team-member-post">Developer</p>
-                    </li>
-                </ul>
+            <p class="team-member-name">Matthew Dix</p>
+            <p class="team-member-post">Graphic Design</p>
+          </li>
+          <li class="team-member-list-items">
+            <div class="overlay-control">
+              <div class="overlay-member-img">
+                <div class="overlay-member-img-link">
+                  <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
+                  <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" class="link-body pinterest"></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="link-body instagram"></a>
+                </div>
+              </div>
+              <img srcset="./img/Member_2.png 380w, ./img/Member_2@2x.png 760w" sizes="380px" src="./img/Member_2.png"
+                alt="Christopher Campbell" class="team-member-img" height="470" />
             </div>
-        </section>
-    </main>
-    <footer>
-        <p class="copyright">© 2016 MoGo free PSD template by <a href="#" class="copyright-link">Laaqiq</a></p>
-        <form class="subscribe">
-            <input type="email" placeholder="Your Email..." class="subscribe-form">
-            <input type="submit" value="subscribe" class="subscribe-submit">
-        </form>
-    </footer>
+            <p class="team-member-name">Christopher Campbell</p>
+            <p class="team-member-post">Branding/UX design</p>
+          </li>
+          <li class="team-member-list-items">
+            <div class="overlay-control">
+              <div class="overlay-member-img">
+                <div class="overlay-member-img-link">
+                  <a href="https://www.facebook.com/" target="_blank" class="link-body facebook"></a>
+                  <a href="https://twitter.com/" target="_blank" class="link-body twitter"></a>
+                  <a href="https://www.pinterest.com/" target="_blank" class="link-body pinterest"></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="link-body instagram"></a>
+                </div>
+              </div>
+              <img srcset="./img/Member_3.png 380w, ./img/Member_3@2x.png 760w" sizes="380px" src="./img/Member_3.png"
+                alt="Michael Fertig" class="team-member-img" height="470" />
+            </div>
+            <p class="team-member-name">Michael Fertig</p>
+            <p class="team-member-post">Developer</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p class="copyright">
+        © 2016 MoGo free PSD template by
+        <a href="#" class="copyright-link">Laaqiq</a>
+      </p>
+      <form class="subscribe">
+        <input type="email" placeholder="Your Email..." class="subscribe-form" />
+        <input type="submit" value="subscribe" class="subscribe-submit" />
+      </form>
+    </div>
+  </footer>
 </body>
 
 </html>

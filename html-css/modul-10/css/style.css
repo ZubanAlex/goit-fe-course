@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* max-width: 1920px; */
+    min-width: 1201px;
     padding: 28px 0 230px;
     margin: 0 auto;        
 }
@@ -67,13 +67,15 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 186px;
 }
 
 .menu__list {
     display: flex;    
     width: 620px;
-    justify-content: space-between;    
+    justify-content: space-between;
+    align-items: flex-end;    
 }
 
 .menu__link {
@@ -84,6 +86,22 @@ body {
     padding: 10px 10px 0 10px; 
     transition: color 200ms linear;   
 }
+
+.menu__icon {    
+    fill: #fff;
+    transition: fill 200ms linear;    
+}
+
+.menu__icon--cart {
+    width: 18px;
+    height: 15px;
+}
+
+.menu__icon--glass {
+    width: 18px;
+    height: 18px;
+}
+
 
 .menu__link::after {
     content: '';           
@@ -101,6 +119,11 @@ body {
     color: #fce38a;
     fill: #fce38a;
     transition: color 200ms linear;
+}
+
+.menu__link:hover .menu__icon {
+    fill: #fce38a;
+    transition: fill 200ms linear;
 }
 
 .menu__link:hover::after {    
@@ -142,22 +165,19 @@ body {
 
 /* MAIN START */
 
-/* TITLE START */
+/* SECTION TITLE START */
 
-.up-title {
-    font-family: 'KaushanScript';
-    font-size: 24px;
+.subtitle--section {    
+    font-size: 2.4rem;
     margin-bottom: 20px;
 }
 
-.down-title {
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
-    position: relative;
+.title--section {    
+    font-size: 3rem;
+    position: relative;    
 }
 
-.down-title::after {
+.title--section::after {
     content:'';
     position: absolute;
     bottom: -40px;
@@ -168,19 +188,15 @@ body {
     background-color: #f38181;    
 }
 
-/* TITLE END */
+/* SECTION TITLE END */
 
 /* SERVICE STAR */
 
 .service {
-    margin-bottom: 90px;
+    padding: 50px 0 45px;    
 }
 
-.title-service {
-    text-align: center;
-}
-
-.title-service.down-title {
+.service__title {
     margin-bottom: 110px;
 }
 
@@ -194,21 +210,32 @@ body {
     align-content: space-between;
 }
 
-.service-list-items {
+.service-list__items {
     width: 350px;        
-    padding-left: 60px;
-    list-style: none;
+    padding-left: 60px;    
     position: relative;    
 }
 
-.service-list-items-title {
+.service-list__items::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 32px;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.service-list__title {
     font-size: 14px;
     text-transform: uppercase;
     color: #333;
     margin-bottom: 10px;
 }
 
-.service-list-items-text {
+.service-list__text {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 15px;
@@ -216,39 +243,39 @@ body {
     line-height: 24px;
 }
 
-.service-list-items.photography {
-    background: url(../img/icon_article/ALARM.png) no-repeat;
+.service-list__items--photography::before {
+    background-image: url(../img/icon_article/ALARM.png);
 }
 
-.service-list-items.design {
-    background: url(../img/icon_article/LINE\ GRAPH.png) no-repeat;
+.service-list__items--design::before {
+    background-image: url(../img/icon_article/LINE\ GRAPH.png);
 }
 
-.service-list-items.creativity {
-    background: url(../img/icon_article/COMPUTER.png) no-repeat;
+.service-list__items--creativity::before {
+    background-image: url(../img/icon_article/COMPUTER.png);
 }
 
-.service-list-items.seo {
-    background: url(../img/icon_article/BOOK\ 2.png) no-repeat;
+.service-list__items--seo::before {
+    background-image: url(../img/icon_article/BOOK\ 2.png);
 }
 
-.service-list-items.html {
-    background: url(../img/icon_article/HOME.png) no-repeat;
+.service-list__items--html::before {
+    background-image: url(../img/icon_article/HOME.png);
 }
 
-.service-list-items.digital {
-    background: url(../img/icon_article/IMAGE.png) no-repeat;
+.service-list__items--digital::before {
+    background-image: url(../img/icon_article/IMAGE.png);
 }
 
 /* SERVICE END */
 
 /* TEAM START */
 
-.title-team {
-    text-align: center;
+.team {
+    padding: 45px 0 0 0;
 }
 
-.title-team.down-title {
+.team__title {
     margin-bottom: 90px;
 }
 
@@ -457,5 +484,29 @@ footer::before {
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .page-header {
         background-image: url(../img/Header_BG@2x.png);     
+    }
+
+    .service-list__items--photography::before {
+        background-image: url(../img/icon_article/ALARM@2x.png);
+    }
+    
+    .service-list__items--design::before {
+        background-image: url(../img/icon_article/LINE\ GRAPH@2x.png);
+    }
+    
+    .service-list__items--creativity::before {
+        background-image: url(../img/icon_article/COMPUTER\ _\ OK@2x.png);
+    }
+    
+    .service-list__items--seo::before {
+        background-image: url(../img/icon_article/BOOK\ 2@2x.png);
+    }
+    
+    .service-list__items--html::before {
+        background-image: url(../img/icon_article/HOME@2x.png);
+    }
+    
+    .service-list__items--digital::before {
+        background-image: url(../img/icon_article/IMAGE@2x.png);
     }
 }
