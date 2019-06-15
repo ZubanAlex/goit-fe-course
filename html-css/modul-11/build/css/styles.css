@@ -913,6 +913,7 @@ main {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
