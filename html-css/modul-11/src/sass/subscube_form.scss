@@ -1,0 +1,40 @@
+
+.subscribe {   
+    align-self: center;
+    display: flex;   
+    justify-content: flex-end;    
+    height: 40px;
+}
+
+.subscribe__form {
+    width: 230px;
+    border: 1px solid $button-color;    
+    border-right-width: 0;
+    outline: none;
+    padding: 14px 12px 13px 12px;    
+    font-family: $article-font;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;     
+    color: $button-color;
+    
+    &::placeholder {
+        font-family: $article-font;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 15px;      
+        color: $button-color;
+    }
+}
+
+.subscribe__submit {
+    width: 150px;
+    background-color: $shadow-color;
+    border: none;
+    outline: none;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $main-white-color;     
+}

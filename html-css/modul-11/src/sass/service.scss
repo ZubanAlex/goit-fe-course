@@ -1,0 +1,103 @@
+.service {
+    padding: 50px 0 45px;    
+}
+.service__subtitle {
+    @extend %subtitle;
+    @extend %subtitle--section;
+}
+.service__title {
+    @extend %title;
+    @extend %title--section;    
+    margin-bottom: 110px;
+}
+
+.service-list {
+    height: 250px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.service-list__items {
+    width: 350px;        
+    padding-left: 60px;    
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 32px;
+        height: 32px;    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &--photography::before {
+        background-image: url(../images/photography.png);
+    }
+
+    &--design::before {
+        background-image: url(../images/design.png);
+    }
+    
+    &--creativity::before {
+        background-image: url(../images/creativity.png);
+    }
+    
+    &--seo::before {
+        background-image: url(../images/seo.png);
+    }
+    
+    &--html::before {
+        background-image: url(../images/html.png);
+    }
+    
+    &--digital::before {
+        background-image: url(../images/digital.png);
+    }
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        &--photography::before {
+            background-image: url(../images/photography@2x.png);
+        }
+    
+        &--design::before {
+            background-image: url(../images/design@2x.png);
+        }
+        
+        &--creativity::before {
+            background-image: url(../images/creativity@2x.png);
+        }
+        
+        &--seo::before {
+            background-image: url(../images/seo@2x.png);
+        }
+        
+        &--html::before {
+            background-image: url(../images/html@2x.png);
+        }
+        
+        &--digital::before {
+            background-image: url(../images/digital@2x.png);
+        }
+    }
+}
+
+.service-list__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $article-title-color;
+    margin-bottom: 10px;
+}
+
+.service-list__text {
+    font-family: $article-font;
+    font-weight: 400;
+    font-size: 15px;
+    color: $article-text-color;
+    line-height: 24px;
+}
